@@ -42,3 +42,19 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let person = "Employee";
+let access;
+if (person == "Employee") {
+    access = "Dietary Services";
+}
+else if (person == "Enrolled Member") {
+    access = "Dietary Services and one-on-one interaction with a dietician";
+}
+else if (person == "Subscriber") {
+    access = "Partial access o facilitate Dietary Services only";
+}
+else if (person == "Non-Subscriber") {
+    access = "Enroll or at least subscribe first";
+}
+console.log("Access = " + access);
